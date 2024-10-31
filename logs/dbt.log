@@ -26,3 +26,75 @@ Runtime Error
 [0m20:41:36.890112 [debug] [MainThread]: Command `dbt run` failed at 20:41:36.889136 after 0.20 seconds
 [0m20:41:36.891089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002508490A3A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025087051310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025087051340>]}
 [0m20:41:36.893040 [debug] [MainThread]: Flushing usage events
+[0m20:10:31.620625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D3E623C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D40D9BE60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D40D9AC30>]}
+
+
+============================== 20:10:31.636158 | ac4257c9-3d2a-4828-ba9f-260bf067cb62 ==============================
+[0m20:10:31.636158 [info ] [MainThread]: Running with dbt=1.8.0
+[0m20:10:31.637672 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\97450\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m20:10:31.638672 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\Github Repositories\dbt-projects\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:10:31.640038 [debug] [MainThread]: Command `dbt run` failed at 20:10:31.640038 after 0.18 seconds
+[0m20:10:31.640038 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D40FBCE00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D40BD97F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D40BD9640>]}
+[0m20:10:31.641074 [debug] [MainThread]: Flushing usage events
+[0m20:17:33.729521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029EE9E2C3B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029EEC411F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029EECB67140>]}
+
+
+============================== 20:17:33.733511 | 9b9390db-b158-48c6-b9e7-9074c85b3b54 ==============================
+[0m20:17:33.733511 [info ] [MainThread]: Running with dbt=1.8.0
+[0m20:17:33.733511 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\97450\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init crypto_bitcoin_cash', 'send_anonymous_usage_stats': 'True'}
+[0m20:17:33.756772 [debug] [MainThread]: Starter project path: C:\Python312\Lib\site-packages\dbt\include\starter_project
+[0m20:17:33.800352 [info ] [MainThread]: 
+Your new dbt project "crypto_bitcoin_cash" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:17:33.801351 [info ] [MainThread]: Setting up your profile.
+[0m20:18:31.613861 [error] [MainThread]: Encountered an error:
+
+[0m20:18:31.659669 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\dbt\cli\main.py", line 469, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\dbt\task\init.py", line 347, in run
+    self.setup_profile(profile_name)
+  File "C:\Python312\Lib\site-packages\dbt\task\init.py", line 263, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Python312\Lib\site-packages\dbt\task\init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Python312\Lib\site-packages\dbt\task\init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\dbt\task\init.py", line 114, in generate_target_from_input
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m20:18:31.661654 [debug] [MainThread]: Command `dbt init` failed at 20:18:31.661654 after 58.08 seconds
+[0m20:18:31.661654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029EEC464AA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029EFD5E9E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029EFE0E5070>]}
+[0m20:18:31.662648 [debug] [MainThread]: Flushing usage events

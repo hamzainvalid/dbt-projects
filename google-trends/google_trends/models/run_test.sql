@@ -1,0 +1,1 @@
+select * from `bigquery-public-data.google_trends.international_top_rising_terms` as run_test_ignore

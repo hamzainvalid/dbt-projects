@@ -1,0 +1,42 @@
+[0m05:19:18.017708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B9F259FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BA2AE6600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BA26E2FF0>]}
+
+
+============================== 05:19:18.026497 | f9c31511-35cb-4796-a791-b71f3f088ddb ==============================
+[0m05:19:18.026497 [info ] [MainThread]: Running with dbt=1.8.0
+[0m05:19:18.027473 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\97450\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m05:19:42.572219 [debug] [MainThread]: Starter project path: C:\Python312\Lib\site-packages\dbt\include\starter_project
+[0m05:19:42.616361 [info ] [MainThread]: 
+Your new dbt project "google_trends" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m05:19:42.618311 [info ] [MainThread]: Setting up your profile.
+[0m05:24:13.069160 [info ] [MainThread]: Profile google_trends written to C:\Users\97450\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m05:24:13.078042 [debug] [MainThread]: Command `dbt init` succeeded at 05:24:13.078042 after 295.26 seconds
+[0m05:24:13.079017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB3259A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB38F9430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027BB2E63950>]}
+[0m05:24:13.080934 [debug] [MainThread]: Flushing usage events
+[0m05:24:24.053977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0B4C83D40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0B768A900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0B75F2DE0>]}
+
+
+============================== 05:24:24.062950 | 1a9bc929-69ce-4fbd-8a0b-45ccdf0b218c ==============================
+[0m05:24:24.062950 [info ] [MainThread]: Running with dbt=1.8.0
+[0m05:24:24.064927 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\97450\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m05:24:24.066879 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\Github Repositories\dbt-projects\google-trends\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m05:24:24.069843 [debug] [MainThread]: Command `dbt run` failed at 05:24:24.068869 after 0.26 seconds
+[0m05:24:24.070781 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0B7509430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0B4C83D40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0B7452D80>]}
+[0m05:24:24.071795 [debug] [MainThread]: Flushing usage events
